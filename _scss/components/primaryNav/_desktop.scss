@@ -1,0 +1,62 @@
+.site-logo {
+        position: absolute;
+    width: 80px;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    height: 30px;
+    left: 20px;
+}
+
+#primary-nav {
+    background: $white;
+    position: relative;
+    width: 100%;
+    height: 60px;
+
+    & > .nav {
+        height: 100%;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 0 9px 110px;
+    }
+
+    .menu,
+    .sub-nav,
+    .lvl2,
+    .lvl3 {
+        display: none;
+    }
+
+    .lvl1 {
+        @include scale(1);
+
+        background: none;
+        height: auto !important;
+        opacity: 1;
+        visibility: visible;
+
+        &:first-child {
+            & > a {
+                padding-left: 0;
+            }
+        }
+
+        & > li {
+            border-top: 0;
+            float: right;
+            opacity: 1;
+            top: 0;
+        }
+    }
+}
+
+
+.logo {
+    position: static;
+
+    h1 {
+        margin-left: $gutter;
+    }
+}
