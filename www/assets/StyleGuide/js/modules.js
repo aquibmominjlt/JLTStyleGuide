@@ -1,4 +1,4 @@
-/*! StyleGuide 2017-10-05 */
+/*! StyleGuide 2017-10-10 */
 /* global RR: true, TweenMax: true, TimelineMax: true, jQuery: true, ripple: true, Ease: true, Expo: true */
 /* jshint unused: false */
 

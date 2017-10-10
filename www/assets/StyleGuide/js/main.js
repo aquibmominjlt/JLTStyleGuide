@@ -143,6 +143,28 @@ jQuery.extend(jQuery.easing, {
         })();
 
 
+
+        (function(){
+            var $listItem = $('.first-level').find(' > li');
+
+                $listItem.on('click', function(){
+                    var $this = $(this);
+
+                        if($this.find('.second-level').length){
+                            if($this.hasClass('active')){
+                                $this.removeClass('active');
+                                $this.find('.second-level').slideUp(300);
+                            }
+                            else{
+                                $this.addClass('active');
+                                $this.find('.second-level').slideDown(300);
+                            }
+                            
+                        }
+                });
+        })();
+
+
         /* JRespond Breakpoints */
         var jRes = jRespond([
             {

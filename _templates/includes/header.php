@@ -70,5 +70,7 @@
             </div>
 
             <?php include('primary-nav.php'); ?>
+            <?php include('side-bar.php'); ?>
+
         </header>
         <?php endif; ?>
